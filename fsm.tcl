@@ -421,7 +421,7 @@ namespace eval ::spaghetti {
             # called via command
             set channelArg [lindex $args 3]
             foreach channel [split $channels] {
-                if {[string tolower $kanava] == [string tolower $channelArg]} {
+                if {[string tolower $channel] == [string tolower $channelArg]} {
                     putquick "NOTICE $channel :[getHoliday]"
                 }
             }
