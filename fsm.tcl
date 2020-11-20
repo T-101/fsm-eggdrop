@@ -428,7 +428,7 @@ namespace eval ::spaghetti {
         } else {
             # called via cron
             foreach channel [split $channels] {
-                putquick "NOTICE $channel :[getHoliday]"
+                putquick "NOTICE $channel :Pastafarianism: [getHoliday]"
             }
         }
     }
