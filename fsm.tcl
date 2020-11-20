@@ -422,7 +422,7 @@ namespace eval ::spaghetti {
             set channelArg [lindex $args 3]
             foreach channel [split $channels] {
                 if {[string tolower $channel] == [string tolower $channelArg]} {
-                    putquick "NOTICE $channel :[getHoliday]"
+                    putquick "NOTICE $channel :Pastafarianism: [getHoliday]"
                 }
             }
         } else {
