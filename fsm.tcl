@@ -35,7 +35,7 @@ namespace eval ::spaghetti {
 
     set spaghettiVersion 1.0.0
 
-    bind time "$announceMinute $announceHour % % %" ::spaghetti::announce
+    bind time - "$announceMinute $announceHour % % %" ::spaghetti::announce
     bind pub - !spaghetti ::spaghetti::announce
 
     proc getHoliday {} {
